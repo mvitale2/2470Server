@@ -18,11 +18,15 @@
  <servlet>
      <servlet-name>SimplePostRequest</servlet-name>
      <servlet-class>SimplePostRequest</servlet-class>
+     <servlet-name>EncryptedMessageServlet</servlet-name>
+     <servlet-class>EncryptMessageServlet</servlet-class>
   </servlet>
 
   <servlet-mapping>
      <servlet-name>SimplePostRequest</servlet-name>
      <url-pattern>/SimplePostRequest</url-pattern>
+     <servlet-name>EncryptedMessageServlet</servlet-name>
+     <url-pattern>/EncryptMessage</url-pattern>
   </servlet-mapping>
   
   <servlet>
