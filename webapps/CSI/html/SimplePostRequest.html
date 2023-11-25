@@ -1,24 +1,17 @@
 <html>
-	<head>
-	      <title>Simple POST Request </title>
-	</head>
-	       <body>
-	           <center>
-	                   Please enter last name and first name to submit a request
-	                   <form method = "post" action = "/CSI/SimplePostRequest">
-	                         <p>Last Name <font color = "#FF0000">*</font>
-	                            <input type = "text" name = "lastName">&nbsp;
-							 </p>
-	                         <p>First Name <font color = "#FF0000">*</font>
-	                            <input type = "text" name = "firstName">&nbsp;
-	                         </p>
-	                         <p>
-							    <input type = "submit" name = "Submit" value = "Submit">
-	                            <input type = "reset" value = "Reset">
-	                         </p>
-	                   </form>
-	                   <p><font color = "#FF0000">* required fields</font></p>		
-	           </center>
-	       </body>
+    <head>
+        <title>Vote Now!</title>
+    </head>
+    <body>
+        <center>
+            <h2>Please select an option to vote</h2>
+            <form method="post" action="/CSI/SimplePostRequest">
+                <input type="radio" id="yes" name="voteOption" value="yes">
+                <label for="yes">Yes</label><br>
+                <input type="radio" id="no" name="voteOption" value="no">
+                <label for="no">No</label><br>
+                <input type="submit" value="Submit Vote">
+            </form>
+        </center>
+    </body>
 </html>
-
